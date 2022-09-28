@@ -1,0 +1,86 @@
+/* form */
+.form .form-field,
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+input,
+select {
+  width: 100%;
+}
+
+/* .login-form input {
+  height: 40px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  color: #333;
+  margin-bottom: 20px;
+} */
+
+.form input[type='submit'] {
+  float: right;
+  background-color: #29586c;
+}
+
+.form input[type='submit']:hover {
+  box-shadow: 2px 2px 5px #555;
+  background-color: #267bb0;
+  cursor: pointer;
+}
+
+.form span > input:hover {
+  box-shadow: 2px 2px 5px #555;
+}
+
+label {
+  font-weight: 500;
+}
+
+label.required::after {
+  content: ' *';
+  color: red;
+}
+
+input[type='email'],
+input[type='number'],
+input[type='password'],
+input[type='text'],
+input[type='url'],
+input[type='date'],
+select,
+textarea {
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+input:focus {
+  border-color: black;
+  background-color: white;
+}
+
+input:read-only {
+  background: #ddd;
+}
+
+input[type='submit'],
+.button,
+button {
+  width: fit-content;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  background-color: #714d2d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.error {
+  min-height: 1rem;
+  color: #f33;
+  list-style-type: disc;
+}
